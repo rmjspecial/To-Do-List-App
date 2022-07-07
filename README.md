@@ -2,13 +2,12 @@
 
 # To-do-List
 
-The aim of this project is to restructure the to do list app code by using Webpack.
+> "To-do list" is a tool that helps to organize your day. It simply lists the things that you need to do and allows you to mark them as complete.
 
-The code is divided into modules and each module is saved in a separate file in the `modules` dir. and imported in the `index.js` file.
 
 ## Live Demo
 
-[link to live demo]()
+[link to live demo](https://rmjspecial.github.io/To-Do-List-App/)
 
 
 
@@ -22,11 +21,12 @@ The code is divided into modules and each module is saved in a separate file in 
 
 ### Prerequisites
 
-- In the repository, copy the `SSH` code snippet for Awesome-book-2
-- clone into the repository by using `git clone` in the git bash terminal
-- cd into the repository `cd Awesome-Books-ES6`
-- open VScode terminal `code .`
-- Go live (live server)
+- Install Webpack and webpack-cli
+- Install Webpack dependencies
+- Create webpack.config.js file, and relevant dependencies to serve the webapp
+- Make a folder for your input files and name it src.Add index.js, style.css and module.js file for implementing the required functionality - In this iterate through an array of objects, and display the objects by their index number in ascending order
+- Dynamically iterate through the array of objects to display them in a webpage in ascending order
+- Request the web page with a web-dev-server or a live-server depending on your environment 
 
 ### Setup
 
