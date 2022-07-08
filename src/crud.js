@@ -2,7 +2,7 @@
 import { setStorage } from './storage.js';
 import { clearAll } from './clear.js';
 
-export { deleteTask, tasksArray, addTodo };
+export { deleteTask, updateStorage, tasksArray, addTodo };
 
 const toDoList = document.getElementById('to-dos');
 const clearBtn = document.getElementById('clear-button');
@@ -141,7 +141,20 @@ window.addEventListener('load', () => {
   getStorage();
 });
 
+const updateStorage = () => {
+  const localData = JSON.parse(localStorage.getItem('todo'));
+  const allTasks = document.querySelectorAll('span');
+  for (let i = 0; i < allTasks.length; i += 1) {
+    if (allTasks[i].classList.contains('text-selected')) {
+      localData[i].completed = true;
+    } else {
+      localData[i].completed = false;
+    }
+  }
+  setStorage(localData);
+};
 
 clearBtn.addEventListener('click', () => {
   clearAll();
+  console.log(tasksArray);
 });
