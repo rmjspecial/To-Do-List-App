@@ -31,7 +31,7 @@ const addTodo = (taskValue) => {
 
   const checkbox = document.querySelectorAll('.checkbox');
   checkbox.forEach((i) => {
-    i.addEventListener('click', () => {
+    i.addEventListener('change', () => {
       i.parentElement.classList.toggle('list-selected-item');
       i.nextElementSibling.classList.toggle('text-selected');
       i.parentElement.lastElementChild.classList.toggle('delete-icon');
@@ -120,7 +120,7 @@ const getStorage = () => {
 
   const checkbox = document.querySelectorAll('.checkbox');
   checkbox.forEach((i) => {
-    i.addEventListener('click', () => {
+    i.addEventListener('change', () => {
       i.parentElement.classList.toggle('list-selected-item');
       i.nextElementSibling.classList.toggle('text-selected');
       i.parentElement.lastElementChild.classList.toggle('delete-icon');
