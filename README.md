@@ -7,7 +7,7 @@
 
 ## Live Demo
 
-[link to live demo](https://rmjspecial.github.io/To-Do-List-App/)
+[link to live demo](https://rmjspecial.github.io/To-Do-List-App/dist)
 
 
 
